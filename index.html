@@ -5,22 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="height=device-height, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" />
-    <!-- For nginx deployment use the following instead -->
-    <!-- <link rel="stylesheet" href="/nginx-templates/styles.css"> -->
-    <!-- <link rel="icon" href="/nginx-templates/favicon.ico" /> -->
-    <title>Brülpi</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="assets/favicon.ico" />
+    <title>Rock-Paper-Scissors</title>
 </head>
 
 <body>
     <header>
-        <h1>Brülpi</h1>
+        <h1>Don't try to cheat me!!!</h1>
     </header>
-    <div class="links-block">  
-        <p><a href="/transmission">Transmission</a></p>
-        <p><a href="/rps">rock-paper-scissors</a></p>
+    <div class="score">
+        <div class="score-label" id="user-label">You</div>
+        <div class="score-label" id="machine-label">Great machine</div>
+        <div class="score-board">
+            <span id="user-score">0</span>
+            <span>:</span>
+            <span id="machine-score">0</span>
+        </div>
+        <button class="new-game" id='new-game-button'>New Game</button>
+    </div>
+    <div class="result">
+        <div id="result-text">
+            <p>Select your choice to start the game</p>
+            <p><strong></strong></p>
+        </div>
+    </div>
+    <div class="choices-block">
+        <img class="choice" id="rock" src="assets/rock.png" alt="rock-choice">
+        <img class="choice" id="paper" src="assets/paper.png" alt="paper-choice">
+        <img class="choice" id="scissors" src="assets/scissors.png" alt="scissors-choice">
     </div>
 </body>
+<script type="module" src="./js/app.js"></script>
 
 </html>

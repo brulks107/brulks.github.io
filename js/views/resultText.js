@@ -1,0 +1,1 @@
+const resultTextRows=()=>document.querySelectorAll("#result-text p"),resultTextRow=a=>resultTextRows()[a-1];export const changeTextFirstRow=a=>resultTextRow(1).innerHTML=a;export const changeTextSecondRow=a=>resultTextRow(2).innerHTML=a;export const changeToResultColor=a=>resultTextRow(2).style.color=a;
