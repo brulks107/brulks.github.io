@@ -1,0 +1,1 @@
+const updateScore=()=>{const a=document.getElementById("user-score"),b=document.getElementById("machine-score");a.innerHTML=window.userScore,b.innerHTML=window.computerScore};export default updateScore;
