@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+:root {
+  --header-bg-color: #EBD704;
+  --body-bg-color: #41575a;
+  --font-family: 'Bree Serif', serif;
+  --score-border-radius: 2vw;
+  --player-score-border-radius: 10vw;
+  --player-score-height: 3.21vw;
+  --player-score-side: 25vw;
+  --new-game-radius: 6vw;
+  --images-size: 10vw;
+}
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: content-box;
+}
+
+html, body {
+  background-color: var(--body-bg-color);
+  height: auto;
+}
+
+header {
+  background-color: var(--header-bg-color);
+  height: 2.1vw;
+}
+
+header>h1 {
+  color: var(--body-bg-color);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 1.5vw
+}
+
+.links-block {
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  min-width: 50%;
+  border: solid var(--header-bg-color);
+  border-radius: var(--score-border-radius);
+  padding: 3vw;
+}
+
+.links-block>p {
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 3vw;
+}
+
+.status-code-block {
+  margin: -2.5vw;
+  text-align: center;
+  font-size: 10vw;
+  color: white;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.auxiliar-message {
+  padding: -1vw;
+  text-align: center;
+  font-size: 4vw;
+  color: white;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: #EBD704;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+/* Mobile responsive */
+
+@media screen and (max-width: 500px) {
+  :root {
+    --player-score-height: 11.21vw;
+    --player-score-side: 12vw;
+    --new-game-radius: 20vw;
+    --images-size: 22vw;
+  }
+  header {
+    height: 13vw;
+  }
+  header>h1 {
+    font-size: 7vw
+  }
+  .links-block {
+    margin: 53vw 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    min-width: 90%;
+    border: solid var(--header-bg-color);
+    border-radius: var(--score-border-radius);
+  }
+  
+  .links-block>p {
+    margin: 3vw;
+    text-align: left;
+    font-family: var(--font-family);
+    font-size: 6vw;
+  }
+
+  .status-code-block {
+    margin: -2.5vw;
+    text-align: center;
+    font-size: 40vw;
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+}
